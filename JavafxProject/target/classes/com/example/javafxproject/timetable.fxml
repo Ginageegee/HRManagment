@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.Controller">
+   <children>
+      <Label layoutX="208.0" layoutY="52.0" prefHeight="17.0" prefWidth="205.0" text="Time Sheet Menu ...." textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="back_to_menu" layoutX="47.0" layoutY="27.0" mnemonicParsing="false" onAction="#onBackToMenuClick" style="-fx-background-color: cyan;" text="Back to Main Menu" />
+      <Label layoutX="62.0" layoutY="118.0" prefHeight="17.0" prefWidth="75.0" text="EmployeeId:" textFill="#e8e8e8" />
+      <Label layoutX="62.0" layoutY="147.0" prefHeight="17.0" prefWidth="75.0" text="Start Time:" textFill="#e8e8e8" />
+      <Label layoutX="62.0" layoutY="177.0" prefHeight="17.0" prefWidth="75.0" text="End Time:" textFill="#e8e8e8" />
+      <TextField fx:id="employeeIdField" layoutX="134.0" layoutY="114.0" />
+      <TextField fx:id="startTimeField" layoutX="134.0" layoutY="143.0" />
+      <TextField fx:id="endTimeField" layoutX="134.0" layoutY="173.0" />
+      <Button fx:id="attend" layoutX="248.0" layoutY="223.0" mnemonicParsing="false" onAction="#onMarkAttendanceClick" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: cyan;" text="Attend " />
+      <Label layoutX="300.0" layoutY="118.0" prefHeight="17.0" prefWidth="75.0" text="Date: " textFill="#e8e8e8" />
+      <DatePicker fx:id="datePicker" layoutX="351.0" layoutY="114.0" />
+      <Label layoutX="289.0" layoutY="156.0" prefHeight="17.0" prefWidth="98.0" text="Hours Worked" textFill="#e8e8e8" />
+      <TextField fx:id="hoursWorkedField" layoutX="375.0" layoutY="152.0" />
+   </children>
+</AnchorPane>

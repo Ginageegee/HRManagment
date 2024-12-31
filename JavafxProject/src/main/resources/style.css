@@ -1,0 +1,5 @@
+.pane-background {
+    -fx-background-image: url("img/Screenshot 2024-11-30 210121.png");
+    -fx-background-size: cover; /* Ensures the image covers the entire Pane */
+    -fx-background-repeat: no-repeat; /* Prevents the image from repeating */
+}
